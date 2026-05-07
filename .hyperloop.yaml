@@ -1,0 +1,16 @@
+repo: jsell-rh/test-ambient-hyperloop
+base_branch: main
+runtime: ambient
+max_workers: 1
+max_task_rounds: 3
+max_cycles: 10
+poll_interval: 10
+
+ambient:
+  project_id: test-ambient
+  acpctl: /home/jsell/bin/acpctl
+  repo_url: https://github.com/jsell-rh/test-ambient-hyperloop.git
+
+observability:
+  log_format: console
+  log_level: debug
